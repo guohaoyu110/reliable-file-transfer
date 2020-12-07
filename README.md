@@ -138,16 +138,17 @@ For RTT of 200ms, drop of 20%: (only on router)
 - sudo tc qdisc add dev eth1 parent 1:1 handle 10: netem delay 100ms drop 20%
 ```
 
-4. Evaluation
+**4. Evaluation**
 
 Perform the step 2 experiment of this Lab using your modified TCP stack in place of the default TCP. If you do more than one modification, make sure to test and evaluate each modification separately (and together) to see which change improves performance under what conditions.
 
-5. References
-[1] Amit Mondal and Aleksandar Kuzmanovic. Removing exponential back-off from tcp. SIGCOMM Comput. Commun. Rev. , 38:17–28, September 2008.
-[2] John Nagle. Congestion control in ip/tcp internetworks. SIGCOMM Comput. Commun. Rev. , 14:11–17, October 1984.
-[3] Ren´e Pfeiffer. Tcp and linux’ pluggable congestion control algorithms.
-[4] http://vger.kernel.org/~davem/skb.html
-[5] http://vger.kernel.org/~davem/skb_data.html
-[6] http://amsekharkernel.blogspot.com/2014/08/what-is-skb-in-linux-kernel-what-are.html
-[7] https://git-scm.com/docs/gittutorial
-[8] https://makefiletutorial.com/
+**5. References**
+
+* Amit Mondal and Aleksandar Kuzmanovic. Removing exponential back-off from tcp. SIGCOMM Comput. Commun. Rev. , 38:17–28, September 2008.
+* John Nagle. Congestion control in ip/tcp internetworks. SIGCOMM Comput. Commun. Rev. , 14:11–17, October 1984.
+* Ren´e Pfeiffer. Tcp and linux’ pluggable congestion control algorithms.
+* http://vger.kernel.org/~davem/skb.html
+* http://vger.kernel.org/~davem/skb_data.html
+* http://amsekharkernel.blogspot.com/2014/08/what-is-skb-in-linux-kernel-what-are.html
+* https://git-scm.com/docs/gittutorial
+* https://makefiletutorial.com/
